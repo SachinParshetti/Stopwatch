@@ -28,8 +28,7 @@
         }
     
         var thread = null;
-
-        function StartClick() {
+        document.getElementById("start").addEventListener("click",  function StartClick() {
         
             if (thread===null)
         {
@@ -49,9 +48,11 @@
             start.className ='btn btn-primary rounded rounded-start-pill';
 
         }
+ 
+      
+        });
 
-        }
-        function ResetClick(){
+  document.getElementById("Reset").addEventListener("click",  function ResetClick(){
           clearInterval(thread);
            thread = null;
             milliSeconds = 0;
@@ -63,5 +64,5 @@
             document.getElementById("seconds").innerHTML = '00 <sub style="font-size:12px">sec</sub>';
             document.getElementById("milliSeconds").innerHTML = '00 <sub style="font-size:12px">ms</sub>';
 
-        }
-  console.log("main.js is loged");
+        });                                                       
+      
