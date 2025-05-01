@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded",function(){
 
         var milliSeconds = 0;
         var seconds = 0;
@@ -66,3 +67,6 @@
 
         });                                                       
       
+
+
+});
