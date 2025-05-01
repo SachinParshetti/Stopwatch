@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded",function(){
       
         });
 
-  document.getElementById("Reset").addEventListener("click",  function ResetClick(){
+  document.getElementById("reset").addEventListener("click",  function ResetClick(){
           clearInterval(thread);
            thread = null;
             milliSeconds = 0;
