@@ -1,0 +1,48 @@
+<!-- Stopwatch-task -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+    .time span{
+        font-size: 40px;
+        font-weight: bold;
+        border: 2px solid rgb(211, 211, 211);
+        border-radius: 10px;
+        padding: 5px;
+        background-color: lightblue;
+    }
+
+    </style>
+
+</head>
+
+<body style="height: 600px;" class="d-flex align-items-center justify-content-center" >
+        <div>
+            <h2 class="h2 text-center">  <i class="bi bi-stopwatch fs-3"></i> Stopwatch</h2>
+            <div class="d-flex justify-content-center input-group-lg " >
+                <button class="btn btn-primary rounded rounded-start-pill" onclick="StartClick()" id="start">start</button>
+                <div class="border border-primary  d-flex justify-content-between align-items-center time"
+                    style="height: 250px; width: 500px;">
+                
+                    <span class="bg-light  align-items-center d-flex justify-content-center ms-2" id="hours" style="width: 100px; height: 150px;"> 00 <sub style="font-size: 12px;">hrs</sub> </span>
+                    :
+                    <span class="bg-light align-items-center d-flex justify-content-center" id="minutes" style="width: 100px; height: 150px;">00 <sub style="font-size: 12px;">min</sub></span>
+                    :
+                    <span class="bg-light align-items-center d-flex justify-content-center" id="seconds" style="width: 100px; height: 150px;">00 <sub style="font-size: 12px;">sec</sub></span>
+                    :
+                    <span class="bg-light align-items-center d-flex justify-content-center me-2" id="milliSeconds" style="width: 100px; height: 150px;">00 <sub style="font-size: 12px;">ms</sub></span>
+                </div>
+                <button class="btn btn-primary rounded rounded-end-pill" onclick="ResetClick()" id="reset"> Reset </button>
+            </div>
+        </div>
+  
+  
+</body>
+
+</html>
