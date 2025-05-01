@@ -26,7 +26,7 @@
             document.getElementById("milliSeconds").innerHTML =`${milliSeconds}<sub style="font-size:12px;">ms</sub>`
 
         }
-      
+    
         var thread = null;
 
         function StartClick() {
@@ -64,3 +64,4 @@
             document.getElementById("milliSeconds").innerHTML = '00 <sub style="font-size:12px">ms</sub>';
 
         }
+  console.log("main.js is loged");
